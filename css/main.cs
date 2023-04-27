@@ -166,12 +166,6 @@ a{
 }
 
 
-section{
-     text-align: center;
-     padding: 20px;
-}
-
-
 .boton_registrarse{
     text-decoration:none;
     font-weight:600;
@@ -183,6 +177,76 @@ section{
     padding-right:40px;
     background-color:#367309;
 }
+
+
+/*Listas para mostrar histórico*/
+
+.listas_historico {
+    list-style: none; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.listas_historico ul {
+    margin: 0 0 0 2em; 
+}
+
+.listas_historico li{
+    position: relative;
+    display: block;
+   text-align: left;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.listas_historico li:hover{
+    background: white;
+    color: black;
+}   
+
+.listas_historico li:before{
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #367309;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.listas_historico  li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.listas_historico li:hover:after{
+    left: -.5em;
+    border-left-color: #367309;             
+}
+
+
+
+section{
+     text-align: center;
+     padding: 20px;
+}
+
+
 
 
 
